@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="visible"
+        android:background="@drawable/test"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:padding="10dp"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+
+
+    <!--                             7번째 (그 외 특이사항)                                -->
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        android:id="@+id/seventh"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:padding="10dp"
+        android:gravity="bottom"
+        android:background="@color/colorPowder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+
+            android:layout_gravity="center"
+            android:text="Additional Uniqueness"
+            android:textSize="25dp"
+            android:background="@color/colorPink"
+            android:padding="3dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Let Student Know \n Your Uniqueness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/uniqueness"
+            android:lines="6"
+            android:maxLines="6"
+            android:background="@color/colorMint"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:padding="20dp"
+            android:layout_width="@dimen/x280"
+            android:layout_height="@dimen/y200" />
+        <Button
+            android:focusable="false"
+            android:id="@+id/next7"
+            android:onClick="seniorJoinSuccess"
+            android:layout_gravity="center"
+            android:background="@drawable/mainbtn1"
+            android:text="SIGNED UP"
+            android:textSize="30dp"
+            android:textColor="@color/colorPowder"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+    <!--                             6번째 (특이사항)                                -->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/sixth"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:padding="10dp"
+        android:gravity="bottom"
+        android:background="@color/colorPowder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text=" Uniqueness "
+            android:textSize="30dp"
+            android:background="@color/colorPink"
+            android:padding="2dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="*Check If You Included!*"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_marginBottom="10dp"
+                android:id="@+id/smokeCheck"
+                android:textSize="25dp"
+                android:text="I'm Smoker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_marginBottom="10dp"
+                android:id="@+id/curfewCheck"
+                android:textSize="25dp"
+                android:text="Want to Have Curfew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_marginBottom="10dp"
+                android:id="@+id/petCheck"
+                android:textSize="25dp"
+                android:text="I Have A Pet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:layout_marginBottom="30dp"
+                android:id="@+id/helpCheck"
+                android:textSize="25dp"
+                android:text="I Need Help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/next6"
+            android:onClick="next"
+            android:layout_gravity="center"
+            android:text="NEXT"
+            android:textColor="@color/colorPowder"
+            android:background="@drawable/mainbtn1"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+
+    <!--                             5번째 (신분증 인증)                                -->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/fifth"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:padding="10dp"
+        android:gravity="bottom"
+        android:background="@color/colorPowder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text=" Ckeck I.D Card "
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPink"
+            android:padding="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imageview"
+            android:background="@color/colorBrown"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y130" />
+        <LinearLayout
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:onClick="takePhoto"
+                android:text="TAKE"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:onClick="loadPhote"
+                android:textSize="30dp"
+                android:text="LOAD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/next5"
+            android:onClick="next"
+            android:layout_gravity="center"
+            android:text="NEXT"
+            android:background="@drawable/mainbtn1"
+            android:textSize="30dp"
+            android:textColor="@color/colorPowder"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+
+
+    <!--                             4번째 (주소, 주거비용)                                -->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/forth"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:padding="10dp"
+        android:gravity="bottom"
+        android:background="@color/colorPowder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPink"
+                android:padding="2dp"
+                android:text="Enter your Address"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<!--should reset position and size-->
+    <EditText
+        android:id="@+id/address"
+        android:textSize="20dp"
+        android:hint="도로명을 입력"
+        android:inputType="text"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/y60" />
+    <Button
+        android:onClick="search"
+        android:text="Search"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/y55" />
+</LinearLayout>
+
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/address2"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:hint="DetailAdress(107동 914호)"
+                android:layout_width="@dimen/x280"
+                android:layout_height="@dimen/y60" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="30dp"
+                android:text=" Room Rent "
+                android:layout_gravity="center"
+                android:background="@color/colorPink"
+                android:padding="2dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_marginBottom="0dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/cost"
+        android:hint="Monthly Rent"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:layout_gravity="right"
+        android:textSize="25dp"
+        android:layout_width="@dimen/x230"
+        android:layout_height="@dimen/y60"
+        android:inputType="number"/>
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:text="KRW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/next4"
+            android:onClick="next"
+            android:layout_gravity="center"
+            android:text="NEXT"
+            android:textColor="@color/colorPowder"
+            android:textSize="30dp"
+            android:background="@drawable/mainbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+    <!--                             3번째 (전화번호)                                -->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/third"
+        android:background="@color/colorPowder"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:padding="10dp"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="center"
+            android:text="Phone Number!"
+            android:textSize="30dp"
+            android:background="@color/colorPink"
+            android:padding="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/phoneNum"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="200dp"
+            android:inputType="phone"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:hint="010-1234-1234"
+            android:textSize="30dp"
+            android:layout_width="@dimen/x250"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/next3"
+            android:onClick="next"
+            android:layout_gravity="center"
+            android:text="NEXT"
+            android:textSize="30dp"
+            android:textColor="@color/colorPowder"
+            android:background="@drawable/mainbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+
+  <!--                             2번째 (성함, 생년월일, 성별)                                -->
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/second"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:padding="10dp"
+        android:gravity="bottom"
+        android:background="@color/colorPowder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:text=" What's Your Name? "
+            android:textSize="25dp"
+            android:padding="2dp"
+            android:background="@color/colorPink"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/name"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:inputType="text"
+                android:gravity="center"
+                android:layout_width="@dimen/x180"
+                android:layout_height="@dimen/y60"
+                android:hint="Enter Name" />
+        </LinearLayout>
+
+
+        <TextView
+            android:text=" Birth Year-Month-Day "
+            android:textSize="25dp"
+            android:padding="2dp"
+            android:background="@color/colorPink"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/BDay"
+            android:textSize="22dp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/x300"
+            android:layout_height="@dimen/y50"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="YYMMDD" />
+
+
+        <RadioGroup
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/genderGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPink"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Gender"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:textSize="30dp"
+                android:id="@+id/femaleButton"
+                android:text="F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <RadioButton
+                android:textSize="30dp"
+                android:id="@+id/maleButton"
+                android:text="M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/next2"
+            android:onClick="next"
+            android:layout_gravity="center"
+            android:text="NEXT"
+            android:textSize="30dp"
+            android:textColor="@color/colorPowder"
+            android:background="@drawable/mainbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+
+    <!--                           1번째 (아이디, 비밀번호)                             -->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/first"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:padding="10dp"
+        android:gravity="bottom"
+        android:background="@color/colorPowder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text=" Enter Your ID (ID) "
+            android:textSize="25dp"
+            android:padding="2dp"
+            android:background="@color/colorPink"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/JoinID"
+                android:layout_gravity="bottom"
+                android:textSize="20dp"
+                android:gravity="center"
+               android:inputType="text"
+                android:layout_width="@dimen/x200"
+                android:layout_height="@dimen/y50"
+                android:hint="ID Here!" />
+            <Button
+                android:onClick="IDcheck"
+                android:id="@+id/IDcheckButton"
+                android:layout_gravity="center"
+                android:text="double   Check"
+                android:textSize="10dp"
+                android:layout_width="@dimen/x70"
+                android:layout_height="@dimen/y50" />
+        </LinearLayout>
+
+
+        <TextView
+            android:text=" Enter your Password "
+            android:textSize="25dp"
+            android:padding="2dp"
+            android:background="@color/colorPink"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/pw1"
+            android:textSize="20dp"
+           android:layout_gravity="center"
+            android:layout_width="@dimen/x250"
+            android:layout_height="@dimen/y50"
+            android:inputType="textPassword"
+            android:hint="8digit (En + Num)" />
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/pw2"
+            android:textSize="20dp"
+            android:layout_width="@dimen/x250"
+            android:layout_height="@dimen/y50"
+            android:inputType="textPassword"
+            android:hint="Re- enter Please!" />
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Please Remember It!"
+            android:textSize="25dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/next1"
+            android:onClick="next"
+            android:textColor="@color/colorPowder"
+            android:layout_gravity="center"
+            android:text="NEXT"
+            android:textSize="30dp"
+            android:background="@drawable/mainbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+    <!--                           0번째 (동의)                             -->
+
+    <LinearLayout
+
+        android:visibility="visible"
+        android:background="@color/colorPowder"
+        android:id="@+id/zero"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:padding="10dp"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="개인정보 제공 및 활용 동의서"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/agreeOk"
+            android:text="@string/agreemnemt_eng"
+            android:textSize="25dp"
+            android:scrollbars="vertical"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@color/colorMint"
+            android:layout_width="350dp"
+            android:layout_height="400dp" />
+
+        <CheckBox
+            android:id="@+id/agree"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:text="I Agree."
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@drawable/mainbtn2"
+            android:id="@+id/next0"
+            android:onClick="next"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPowder"
+            android:text="NEXT"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y70" />
+
+    </LinearLayout>
+</FrameLayout>

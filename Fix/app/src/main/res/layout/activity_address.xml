@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hhj73.fix.Address"
+    android:background="@color/colorMint"
+    android:orientation="vertical"
+    android:gravity="bottom|center"
+    >
+
+    <WebView
+        android:id="@+id/webview"
+        android:padding="10dp"
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/y350"
+      />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="60dp"
+        android:textColor="@color/colorBrown"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Select your Address!"
+        android:textSize="20dp"
+ />
+
+    <Button
+        android:background="@drawable/mainbtn2"
+        android:id="@+id/addconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/colorPowder"
+        android:layout_margin="5dp"
+        android:text="OK"
+        android:textSize="30dp"
+        android:onClick="addclick"
+ />
+
+
+</LinearLayout>

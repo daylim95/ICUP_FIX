@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@drawable/main"
+    tools:context="com.example.hhj73.fix.MainActivity">
+
+<LinearLayout
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorPowder"
+                android:textSize="40dp"
+                android:layout_width="@dimen/x50"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="ID"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+            <EditText
+                android:textColor="@color/colorPowder"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:id="@+id/inputID"
+                android:inputType="text"
+                android:layout_width="@dimen/x200"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorPowder"
+                android:textSize="40dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="PW"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+            <EditText
+                android:gravity="center"
+                android:textColor="@color/colorPowder"
+                android:id="@+id/inputPW"
+                android:width="@dimen/x150"
+                android:textSize="35dp"
+                android:inputType="textPassword"
+                android:layout_width="@dimen/x200"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="0dp"
+        android:id="@+id/loginButton"
+        android:background="@drawable/mainbtn2"
+        android:textSize="30dp"
+        android:textColor="@color/colorPowder"
+        android:text="Login"
+        android:onClick="login"
+        android:layout_width="330dp"
+        android:layout_height="90dp" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginBottom="10dp"
+    android:layout_gravity="bottom"
+    android:gravity="bottom|center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:textSize="30dp"
+        android:background="@drawable/mainbtn1"
+        android:id="@+id/seniorJoinButton"
+        android:textColor="@color/colorPowder"
+        android:text="JOIN"
+        android:layout_marginRight="5dp"
+        android:layout_width="330dp"
+        android:layout_height="90dp"
+        android:onClick="join"/>
+
+</LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPowder"
+    tools:context=".SeniorMain">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <FrameLayout
+        android:background="@color/colorMint"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="22dp"
+            android:textColor="@color/colorPowder"
+            android:gravity="center"
+            android:text="XYLOPHONE HOUSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout
+        android:background="@color/colorDarkMint"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="10dp">
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#eeeeee"
+            android:layout_width="130dp"
+            android:layout_height="130dp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:id="@+id/myID"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:textSize="25dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_gravity="center"
+            android:onClick="editRoomInfo"
+            android:text="My Room info"
+            android:textColor="@color/colorPowder"
+            android:textSize="22dp"
+            android:background="@drawable/mainbtn1"
+            android:layout_width="310dp"
+            android:layout_height="90dp" />
+        <Button
+            android:layout_gravity="center"
+            android:text="Edit profile"
+            android:textColor="@color/colorPowder"
+            android:textSize="22dp"
+            android:background="@drawable/mainbtn2"
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:onClick="editProfile"/>
+
+            <FrameLayout
+                android:layout_width="230dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn3"
+                    android:onClick="chatList"
+                    android:text="CHAT"
+                    android:textColor="@color/colorPowder"
+                    android:textSize="23dp" />
+
+                <Button
+                    android:id="@+id/ChatNum"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:background="@color/colorPink"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorPowder" />
+            </FrameLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:background="@color/colorMint"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:gravity="center|right"
+            android:layout_height="@dimen/y50">
+
+            <!--사용설명 버튼-->
+            <Button
+                android:onClick="howTo"
+                android:text="\?"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y40" />
+        </LinearLayout>
+
+        <!--보조 레이어-->
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/howTo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:background="@color/colorCream"
+                    android:layout_marginTop="180dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:text="↓ Touch to Edit your Room Information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:background="@color/colorCream"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:text=" Edit your profilePic, Msg!↓"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="140dp"
+                    android:background="@color/colorCream"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:text="↑Chat with students who want to talk with you."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:onClick="offHowTo"
+                android:background="#00ff0000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+    </FrameLayout>
+</LinearLayout>

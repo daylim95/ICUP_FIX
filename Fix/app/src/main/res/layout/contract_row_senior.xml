@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorBright">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="계약 대상자 "/>
+        <TextView
+            android:id="@+id/seniorName_s"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="김나경 어르신"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/studentName_s"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="김나경 학    생"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="계약 실효날짜"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="5dp">
+            <TextView
+                android:id="@+id/effectiveDate_s"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="YYYY년 MM월 DD일"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="계약 기간"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="5dp">
+            <TextView
+                android:id="@+id/periodMonth_s"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="MM개월"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="계약 만료날짜"/>
+        <TextView
+            android:id="@+id/expirationDate_s"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="YYYY년 MM월 DD일"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:lineSpacingExtra="7sp"
+            android:text="소재지"/>
+        <TextView
+            android:id="@+id/address_contract_s"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="서울시 광진구 화양동"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="월세"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="5dp">
+            <TextView
+                android:id="@+id/monthlyFee_s"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="100,000원"
+                android:clickable="true"
+                android:paddingRight="30dp"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="조건"/>
+
+        <GridLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:padding="2dp">
+            <TextView
+                android:id="@+id/smoking_s"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@color/colorLightRed"
+                android:text="흡연"/>
+            <TextView
+                android:id="@+id/smoking_consent_s"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="미합의"/>
+            <TextView
+                android:id="@+id/smoking_detail_s"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/pet_s"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@color/colorLightRed"
+                android:text="반려동물"/>
+            <TextView
+                android:id="@+id/pet_consent_s"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="미합의"/>
+            <TextView
+                android:id="@+id/pet_detail_s"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/cerfew_s"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@color/colorLightRed"
+                android:text="통금"/>
+            <TextView
+                android:id="@+id/cerfew_consent_s"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="미합의"/>
+            <TextView
+                android:id="@+id/cerfew_detail_s"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/help_s"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@color/colorLightRed"
+                android:text="도움"/>
+            <TextView
+                android:id="@+id/help_consent_s"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="미합의"/>
+            <TextView
+                android:id="@+id/help_detail_s"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1" />
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="특이 사항"/>
+        <TextView
+            android:id="@+id/extraspecial_s"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@color/colorLightRed"
+            android:lineSpacingExtra="7sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/extraspecial_consent_s"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="미합의" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="작성 날짜"/>
+        <TextView
+            android:id="@+id/writedate_s"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="YYYY년 MM월 DD일"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</LinearLayout>

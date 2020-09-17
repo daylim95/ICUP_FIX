@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkMint"
+    tools:context=".poll_senior">
+    <ScrollView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorPowder"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/colorPowder"
+                android:background="@color/colorPink"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="계약종료 상호평가"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"
+                android:text="안녕하세요! FIX를 사용해주셔서 감사합니다! FIX 사용과 학생에 대해 몇가지 사항에 대해 답해주시길 바랍니다."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorDarkMint"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!--1번-->
+            <TextView
+                android:textSize="20dp"
+                android:text="계약 내용이 잘 지켜졌나요?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio1-1"
+                    android:text="네"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio1-2"
+                    android:text="보통"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio1-3"
+                    android:text="아니요"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorDarkMint"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!--2번-->
+            <TextView
+                android:textSize="20dp"
+                android:text="계약 내용이 충분하다고 생각하시나요?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio2-1"
+                    android:text="네"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio2-2"
+                    android:text="보통"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio2-3"
+                    android:text="아니요"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorDarkMint"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!--3번-->
+            <TextView
+                android:textSize="20dp"
+                android:text="계약기간중 학생과 대화를 많이 하셨나요?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio3-1"
+                    android:text="네"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio3-2"
+                    android:text="보통"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio3-3"
+                    android:text="아니요"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorDarkMint"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <!--4번-->
+            <TextView
+                android:textSize="20dp"
+                android:text="학생과의 갈등이 있었다면 적어주세요"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/congest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorDarkMint"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <!--5번-->
+            <TextView
+                android:textSize="20dp"
+                android:text="문제가 있었을 경우 보통 잘 해결되었나요?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio4-1"
+                    android:text="네"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio4-2"
+                    android:text="보통"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio4-3"
+                    android:text="아니요"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorDarkMint"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <!--6번-->
+            <TextView
+                android:textSize="20dp"
+                android:text="힉생의 태도는 적절했다고 생각하시나요?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio5-1"
+                    android:text="적절하다"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio5-2"
+                    android:text="보통이다"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio5-3"
+                    android:text="부적절하다"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorDarkMint"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <!--7번-->
+            <TextView
+                android:textSize="20dp"
+                android:text="학생을 다른 분에게 추천할 의향이 있으신가요?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/radioGroup6"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio6-1"
+                    android:text="네"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio6-2"
+                    android:text="모르겠다"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio6-3"
+                    android:text="아니요"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorDarkMint"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <!--8번-->
+            <TextView
+                android:textSize="20dp"
+                android:text="이 학생과 다음에도 재계약 할 의향이 있으신가요?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/radioGroup7"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio7-1"
+                    android:text="네"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio7-2"
+                    android:text="모르겠다"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio7-3"
+                    android:text="아니요"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorDarkMint"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <!--끝-->
+            <TextView
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="평가에 응해주셔서 감사합니다!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:onClick="submit"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorPowder"
+                android:text="제출하기"
+                android:background="@drawable/mainbtn2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y60" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatchingActivity"
+    android:orientation="vertical"
+    android:background="@color/colorMint">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <!--프로필 설정 들어가는 버튼-->
+    <Button
+        android:onClick="profile"
+        android:layout_marginLeft="5dp"
+        android:background="#00ff0000"
+        android:text="ⓟ"
+        android:textSize="35dp"
+        android:textColor="@color/colorPowder"
+        android:layout_gravity="center|left"
+        android:gravity="center"
+        android:layout_width="@dimen/x50"
+        android:layout_height="@dimen/y40" />
+
+    <!--채팅내역 들어가는 버튼-->
+    <Button
+        android:onClick="ChatList"
+        android:layout_marginRight="5dp"
+        android:background="#00ff0000"
+        android:text="三"
+        android:textSize="30dp"
+        android:textColor="@color/colorPowder"
+        android:layout_gravity="center|right"
+        android:gravity="center"
+        android:layout_width="@dimen/x40"
+        android:layout_height="@dimen/y40" />
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/colorPowder"
+        android:gravity="center"
+        android:text="XYLOPHONE HOUSE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>
+<LinearLayout
+    android:background="@color/colorDarkMint"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="@dimen/y60">
+
+    <!--필터링 재설정하는 버튼-->
+    <Button
+        android:onClick="filter"
+        android:text="FILTER SETTING"
+        android:textSize="20dp"
+        android:textColor="@color/colorPowder"
+        android:background="@drawable/mainbtn2"
+        android:layout_width="@dimen/x270"
+        android:layout_height="@dimen/y50" />
+
+</LinearLayout>
+
+    <ListView
+        android:id="@+id/matchList"
+        android:background="@color/colorPowder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

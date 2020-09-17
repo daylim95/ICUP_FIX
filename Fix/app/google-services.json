@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "844198375424",
+    "firebase_url": "https://xylophone-house.firebaseio.com",
+    "project_id": "xylophone-house",
+    "storage_bucket": "xylophone-house.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844198375424:android:af4700ef360c9510",
+        "android_client_info": {
+          "package_name": "com.example.hhj73.fix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844198375424-8lvtetup0ldlo3kfecb0b7uqau24n50s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hhj73.fix",
+            "certificate_hash": "93403ca53ffe030b0d10e7dd93ab84c074b8688c"
+          }
+        },
+        {
+          "client_id": "844198375424-r883u5hiujg4pjalro60mmv6kstubt39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7l79m7HoMcflv1hk_M7OK-2bIP85nSgw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844198375424-r883u5hiujg4pjalro60mmv6kstubt39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

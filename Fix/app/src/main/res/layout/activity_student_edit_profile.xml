@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPowder"
+    tools:context=".StudentEditProfile">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:background="@color/colorMint"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="@color/colorPowder"
+                    android:gravity="center"
+                    android:text="XYLOPHONE HOUSE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <LinearLayout
+                android:background="@color/colorDarkMint"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="10dp">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="> Edit Photo"/>
+
+                <ImageView
+                    android:onClick="StudentEditPhoto"
+                    android:id="@+id/profilePhotoInput"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#eeeeee"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="> Edit Profile Message"/>
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/profileMessageInput"
+                    android:text=""
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:gravity="bottom"
+                    android:layout_height="70dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:onClick="saveProfile"
+                android:layout_marginTop="10dp"
+                android:text="SAVE"
+                android:textColor="@color/colorPowder"
+                android:textSize="22dp"
+                android:background="@drawable/mainbtn2"
+                android:layout_width="320dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"/>
+            <Button
+                android:onClick="logOut"
+                android:text="LOGOUT"
+                android:textColor="@color/colorPowder"
+                android:textSize="22dp"
+                android:background="@drawable/mainbtn1"
+                android:layout_width="320dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/colorMint"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:gravity="center|right"
+            android:layout_height="80dp">
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

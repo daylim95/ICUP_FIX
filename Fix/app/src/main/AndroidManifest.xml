@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hhj73.fix">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SeniorJoinActivity" />
+        <activity android:name=".StudentJoinActivity" />
+        <activity
+            android:name=".EmailCertifActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity android:name=".Address" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.hhj73.fix"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".ChatActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".MatchingActivity" />
+        <activity android:name=".Join" />
+        <activity android:name=".SeniorDetail" />
+        <activity android:name=".SeniorMain" />
+        <activity android:name=".EditProfileActivity" />
+        <activity
+            android:name=".SelectPhotoMode"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity android:name=".SeniorFirst" />
+        <activity android:name=".StudentEditProfile" />
+        <activity android:name=".StudentChatList" />
+        <activity
+            android:name=".Filter"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity android:name=".MatchedMain" />
+        <activity android:name=".SeniorChatList" />
+        <activity android:name=".ChatActivitySenior"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".StudentDetail" />
+        <activity android:name=".ChatAfterMatchedActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".EditRoomInfoActivity" />
+        <activity
+            android:name=".emergency"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity android:name=".Poll"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".poll_senior"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".ContractMatchedActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Profile Path"
+            android:textSize="20sp"/>
+        <View
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorMint"/>
+        <TextView
+            android:onClick="goCamera"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:textSize="15sp"/>
+        <View
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#b1b1b1"/>
+        <TextView
+            android:onClick="goGallery"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gallery"
+            android:textSize="15sp"/>
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/profileImageChange"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y200"
+            android:background="#b1b1b1"/>
+        <Button
+            android:onClick="saveProfilePic"
+            android:text="OK"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Fix</string>
+    <string name="agreement">본인은 개인정보 보호법 제15조에 의거하여 본인의 개인정보를 제공할 것을 동의합니다.\n\n
+
+\u003C 개인정보 수집 안내\u003E\n
+○ 개인정보의 수집의 목적\n
+   - 본인 식별절차에 이용\n
+   - 고지사항 전달, 불만 처리 등을 위한 원활한 의사소통 경로의 확보\n
+   - 각종 우편물 발생 시 정확한 배송지의 확보\n
+   - 홈 쉐어링 매칭 여부 판단을 위한 기본 정보 확보\n\n
+
+○ 개인정보 수집 항목\n
+   - 성명, 주민등록번호, 전화번호 (휴대폰, 전화번호), 자택 주소, 주택 거래 정보 등\n\n
+
+○ 개인정보 보유기간\n
+   - 개인정보 보호법에 의거 법률로 정한 목적 이외의 다른 어떠한 목적으로도 사용되지 않으며 내부 규정에 의해 일정 기간 저장된 후 파기\n\n
+
+○ 동의하지 않을 경우의 처리\n
+   - 이용자는 개인정보 수집 동의에 거부할 수 있으며, 이 경우 등록 절차(사실 확인 등)가 제한됨으로 회원가입 상 불이익을 초래할 수 있습니다.</string>
+
+    <string name="agreemnemt_eng">
+
+Consent to providing and usage of personal information\n\n
+
+  I (the user) agree to offer personal information based on the
+Article 15 of Privacy Act.\n\n
+
+○ Purpose of Collection of Personal Information\n
+   - Usage of personal identification process\n
+   - Ensure a smooth communication path for notification, complaint\n
+      handling, etc.
+   - Ensure accurate mailing address when various mail items\n
+      occur
+   - Obtain basic information for home sharing matching\n\n
+
+○ Items of Personal Information\n
+   - Name, Regident registration number (or personal ID number),
+     (Mobile) Phone number, Address, Information of housing
+     transaction\n\n
+
+○ Retention Period\n
+   - Based on Privacy Act, used only for the purpose evinced on\n
+     the law and delete after being stored for a certain period according to the internal regulations\n\n
+
+○ Process for disagreement\n
+   - User can refuse to agree, but there will be a disadvantage in assignment caused by restriction of register process</string>
+</resources>

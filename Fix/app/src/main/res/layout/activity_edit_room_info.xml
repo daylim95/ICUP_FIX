@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditRoomInfoActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPowder">
+    <FrameLayout
+        android:background="@color/colorMint"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="22dp"
+            android:textColor="@color/colorPowder"
+            android:gravity="center"
+            android:text="XYLOPHONE HOUSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout
+        android:background="@color/colorDarkMint"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="10dp">
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/newPhoto"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:background="@color/colorCream"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:textSize="25dp"
+        android:text="방 사진 수정"
+        android:onClick="editPhoto"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mainbtn1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorPowder"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/x270"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:textSize="20dp"
+            android:text="월세 : "
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/newPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+
+    </LinearLayout>
+
+    <Button
+
+        android:textSize="30dp"
+        android:text="저장"
+        android:onClick="save"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mainbtn3"/>
+
+</LinearLayout>

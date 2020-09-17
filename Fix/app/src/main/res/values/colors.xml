@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorMint">#84ccc9</color>
+    <color name="colorDarkMint">#72adab</color>
+    <color name="colorBrown">#774F38</color>
+    <color name="colorCream">#F1D4AF</color>
+    <color name="colorPowder">#ECE5CE</color>
+    <color name="colorBright">#f8f2eb</color>
+    <color name="colorBrightMint">#C5E0DC</color>
+    <color name="colorPink">#E08E79</color>
+    <color name="trans">#00ff0000</color>
+    <color name="colorLightRed">#fed6d7</color>
+    <color name="colorLightGreen">#e2f0d9</color>
+</resources>

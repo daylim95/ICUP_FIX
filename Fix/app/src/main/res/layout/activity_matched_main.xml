@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/matched"
+    android:orientation="vertical"
+    tools:context=".MatchedMain">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/colorMint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y60">
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="32dp"
+                android:textColor="@color/colorPowder"
+                android:gravity="center"
+                android:text="XYLOPHONE HOUSE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/matchedTitle"
+            android:layout_marginTop="60dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="asdf x ㅁㄴㅇㄹ"
+            android:layout_width="match_parent"
+            android:layout_height="140dp" />
+        <LinearLayout
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/p_senior"
+                android:background="@color/colorBrightMint"
+                android:layout_marginRight="103dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageView
+                android:id="@+id/p_student"
+                android:background="@color/colorPink"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+        <Button
+            android:onClick="goChat"
+            android:textColor="@color/colorPowder"
+            android:textSize="23dp"
+            android:text="CHAT"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/mainbtn1"
+            android:layout_width="@dimen/x160"
+            android:layout_height="70dp" />
+        <Button
+            android:onClick="emergency"
+            android:textColor="@color/colorPowder"
+            android:textSize="23dp"
+            android:text="EMERGENCY"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/mainbtn2"
+            android:layout_width="@dimen/x210"
+            android:layout_height="70dp" />
+        <Button
+            android:onClick="goContract"
+            android:textColor="@color/colorPowder"
+            android:textSize="23dp"
+            android:text="CONTRACT"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn3"
+            android:layout_width="230dp"
+            android:layout_height="70dp" />
+        <LinearLayout
+            android:background="@color/colorMint"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_height="70dp">
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
